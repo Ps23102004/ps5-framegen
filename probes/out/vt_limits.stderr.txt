@@ -1,0 +1,510 @@
+2026-11-19 12:56:36.700 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.758 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:36.759 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.051 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.052 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.052 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.154 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.474 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.474 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.474 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.692 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Invalid input width
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Fail to create effect configuration
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Invalid input width
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Fail to create effect configuration
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Invalid input width
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Fail to create effect configuration
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Invalid input width
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Fail to create effect configuration
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Invalid input width
+2026-11-19 12:56:37.883 vt_limits[32511:2282392] Fail to create effect configuration
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:49.960 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.065 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)
+2026-11-19 12:56:52.066 vt_limits[32511:2282392] Resolved compile flags: (
+    "",
+    SpatialSplitGenericDAG,
+    ""
+)

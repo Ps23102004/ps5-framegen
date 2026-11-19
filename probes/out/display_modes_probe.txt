@@ -1,0 +1,24 @@
+scaler usage: colorTextureUsage=1 outputTextureUsage=5 (1=shaderRead 2=shaderWrite 4=renderTarget)
+bar 0 YCbCr=(235, 128, 128) gpuRGB=(255, 255, 255) vImageRGB=(255, 255, 255)
+bar 1 YCbCr=(219, 16, 138) gpuRGB=(254, 255, 0) vImageRGB=(254, 255, 0)
+bar 2 YCbCr=(188, 154, 16) gpuRGB=(0, 254, 255) vImageRGB=(0, 254, 255)
+bar 3 YCbCr=(173, 42, 26) gpuRGB=(0, 255, 1) vImageRGB=(0, 255, 1)
+bar 4 YCbCr=(78, 214, 230) gpuRGB=(255, 0, 254) vImageRGB=(255, 0, 254)
+bar 5 YCbCr=(63, 102, 240) gpuRGB=(255, 1, 0) vImageRGB=(255, 1, 0)
+bar 6 YCbCr=(32, 240, 118) gpuRGB=(1, 0, 255) vImageRGB=(1, 0, 255)
+bar 7 YCbCr=(16, 128, 128) gpuRGB=(0, 0, 0) vImageRGB=(0, 0, 0)
+colour self-check: max |GPU - vImage| = 0 (8-bit steps)
+current: 2056x1329 pt, 4112x2658 px, 120.000 Hz
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 120.000 Hz usableForDesktopGUI=true ioFlags=0x2000007
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 60.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 59.940 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 50.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 48.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 1728x1117 pt, 3456x2234 px, 47.950 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 120.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 60.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 59.940 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 50.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 48.000 Hz usableForDesktopGUI=true ioFlags=0x2000003
+3456x2234 px mode: 3456x2234 pt, 3456x2234 px, 47.950 Hz usableForDesktopGUI=true ioFlags=0x2000003
+(132 modes in total, 12 at 3456x2234 px)

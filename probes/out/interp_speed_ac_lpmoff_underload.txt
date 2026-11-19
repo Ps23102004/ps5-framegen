@@ -1,0 +1,7 @@
+# 2026-11-19 16:09 AC power, Low Power Mode off, under load. Now drawing from 'AC Power' | lowpowermode 0 | load { 5.00 5.90 5.71 } | ffmpeg jobs: 10
+== 1920x1080 (2073600 px, 1.00x of 1080p)  pace 33.37 ms  buffers pooled  startSession 78 ms
+interpolated 3596 frames in 120 s wall (fails 0)
+ms per frame: p5 12.80  p25 16.32  p50 18.13  p75 19.31  p95 21.01  p99 22.31  max 25.47  mean 17.67  (>1.5x p50: 0.0%)
+p50 per tenth of the run (time order): 18.11 17.59 17.98 17.28 17.91 18.78 18.37 15.54 18.31 18.67
+histogram (x p50): <0.8:537 0.8-0.9:363 0.9-1.1:2175 1.1-1.25:503 1.25-1.5:18 1.5-2:0 2-3:0 >=3:0
+# end load { 4.00 5.27 5.49 }

@@ -1,0 +1,10 @@
+motion_8: <recording>.mp4 @ 2165.000 s, distinct threshold 1.50
+startSession 78 ms
+  pts 2165.0000 first frame
+  pts 2165.0129 diff  16.44 NEW  gap 0.8 frames, interpolate ok 20.6 ms
+  pts 2165.0295 diff   0.15 duplicate
+  pts 2165.0462 diff  16.24 NEW  gap 2.0 frames, interpolate ok 14.2 ms
+  pts 2165.0629 diff   0.11 duplicate
+  pts 2165.0796 diff  16.30 NEW  gap 2.0 frames, interpolate ok 14.4 ms
+  pts 2165.0963 diff   0.11 duplicate
+  pts 2165.1130 diff  16.05 NEW  gap 2.0 frames, interpolate ok 14.5 ms  <- saved

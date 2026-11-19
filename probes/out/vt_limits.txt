@@ -1,0 +1,292 @@
+# vt_limits raw stdout (system NSLog noise on stderr is in vt_limits.stderr.txt). Thu Nov 19 12:56:36 2026
+# load: 12:56  load averages: 4.92 10.00 11.88; ffmpeg processes running: 9
+# vt_limits  host: Version 27.2.1 (Build 26B131), 2026-11-19 17:56:36 +0000, GPU: Apple M3 Pro
+
+== VTLowLatencyFrameInterpolation
+  isSupported: 1
+  minimumDimensions: not exposed by this class
+  maximumDimensions: not exposed by this class
+  spatialScaleFactor 1: maximumDimension=1920 maximumPixelCount=2073600
+  spatialScaleFactor 2: maximumDimension=640 maximumPixelCount=230400
+  spatialScaleFactor 3: maximumDimension=0 maximumPixelCount=0
+  spatialScaleFactor 4: maximumDimension=0 maximumPixelCount=0
+  temporal only, numberOfInterpolatedFrames=1:
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  temporal + spatialScaleFactor=2:
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  temporal only, startSession by size (config creation does not validate size, startSession does):
+   960x540    startSession: returned YES, error nil, 427 ms -> USABLE
+   1280x720    startSession: returned YES, error nil, 34 ms -> USABLE
+   1600x900    startSession: returned YES, error nil, 252 ms -> USABLE
+   1728x972    startSession: returned YES, error nil, 643 ms -> USABLE
+   1920x1080    startSession: returned YES, error nil, 78 ms -> USABLE
+   2560x1440    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 2560x1440 is not supported, must not exceed 2073600" UserInfo={NSLocalizedDescription=Input resolution 2560x1440 is not supported, must not exceed 2073600}
+   3456x1944    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 3456x1952 is not supported, must not exceed 2073600" UserInfo={NSLocalizedDescription=Input resolution 3456x1952 is not supported, must not exceed 2073600}
+   3840x2160    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 3840x2176 is not supported, must not exceed 2073600" UserInfo={NSLocalizedDescription=Input resolution 3840x2176 is not supported, must not exceed 2073600}
+   4096x2160    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 4096x2176 is not supported, must not exceed 2073600" UserInfo={NSLocalizedDescription=Input resolution 4096x2176 is not supported, must not exceed 2073600}
+   7680x4320    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 7680x4320 is not supported, must not exceed 2073600" UserInfo={NSLocalizedDescription=Input resolution 7680x4320 is not supported, must not exceed 2073600}
+  temporal + spatial x2, startSession by size:
+   640x360    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 640x368 is not supported, must not exceed 230400" UserInfo={NSLocalizedDescription=Input resolution 640x368 is not supported, must not exceed 230400}
+   960x540    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 960x544 is not supported, must not exceed 230400" UserInfo={NSLocalizedDescription=Input resolution 960x544 is not supported, must not exceed 230400}
+   1280x720    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 1280x720 is not supported, must not exceed 230400" UserInfo={NSLocalizedDescription=Input resolution 1280x720 is not supported, must not exceed 230400}
+   1728x972    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 1728x976 is not supported, must not exceed 230400" UserInfo={NSLocalizedDescription=Input resolution 1728x976 is not supported, must not exceed 230400}
+  1920x1080 numberOfInterpolatedFrames=1: config created
+    frameSupportedPixelFormats: 420v
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,IOSurfaceProperties,Height,ExtendedPixelsRight,ExtendedPixelsBottom,Width] formats: 420v
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,IOSurfaceProperties,Height,ExtendedPixelsRight,ExtendedPixelsBottom,Width] formats: 420v
+    startSession: returned YES, error nil, 69 ms -> USABLE
+  1920x1080 numberOfInterpolatedFrames=2: config created
+  1920x1080 numberOfInterpolatedFrames=3: config created
+  1920x1080 numberOfInterpolatedFrames=4: config created
+  1728x972 spatialScaleFactor=2 (would give 3456x1944): config created
+    frameSupportedPixelFormats: 420v
+    sourcePixelBufferAttributes: width=1728 height=972 keys=[PixelFormatType,IOSurfaceProperties,Height,ExtendedPixelsRight,ExtendedPixelsBottom,Width] formats: 420v
+    destinationPixelBufferAttributes: width=3456 height=1944 keys=[PixelFormatType,IOSurfaceProperties,Height,ExtendedPixelsRight,ExtendedPixelsBottom,Width] formats: 420v
+    startSession: returned YES, error SET, 0 ms -> NOT USABLE  Error Domain=com.apple.VideoProcessing Code=-12910 "Input resolution 1728x976 is not supported, must not exceed 230400" UserInfo={NSLocalizedDescription=Input resolution 1728x976 is not supported, must not exceed 230400}
+
+== VTLowLatencySuperResolutionScaler
+  isSupported: 1
+  minimumDimensions: 96x96
+  maximumDimensions: 1280x1280
+  supportedScaleFactors (class): 1.5 2 4
+  scale 1.500: maximumDimension=1280 maximumPixelCount=1638400
+  scale 2.000: maximumDimension=960 maximumPixelCount=921600
+  scale 4.000: maximumDimension=480 maximumPixelCount=230400
+  supportedScaleFactorsForFrameWidth:960 frameHeight:540 -> [1.5 2]
+  supportedScaleFactorsForFrameWidth:1280 frameHeight:720 -> [1.5]
+  supportedScaleFactorsForFrameWidth:1600 frameHeight:900 -> []
+  supportedScaleFactorsForFrameWidth:1728 frameHeight:972 -> []
+  supportedScaleFactorsForFrameWidth:1920 frameHeight:1080 -> []
+  supportedScaleFactorsForFrameWidth:2560 frameHeight:1440 -> []
+  supportedScaleFactorsForFrameWidth:3456 frameHeight:1944 -> []
+  supportedScaleFactorsForFrameWidth:3840 frameHeight:2160 -> []
+  supportedScaleFactorsForFrameWidth:4096 frameHeight:2160 -> []
+  supportedScaleFactorsForFrameWidth:7680 frameHeight:4320 -> []
+  1920x1080: NO supported scale factor -> configuration cannot be created
+
+== VTSuperResolutionScaler
+  isSupported: 1
+  minimumDimensions: not exposed by this class
+  maximumDimensions: not exposed by this class
+  supportedScaleFactors: 4
+  supportedRevisions: <NSIndexSet: 0xa7918a4d4b32441f>[number of indexes: 1 (in 1 ranges), indexes: (1)]  defaultRevision: 1
+  scaleFactor 4, inputType video:
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=nil 3456x1944=nil 3840x2160=nil 4096x2160=nil 7680x4320=nil
+  1920x1080 x4: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=7680 height=4320 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    configurationModelStatus=2 (0 download required, 1 downloading, 2 ready)  configurationModelPercentageAvailable=1.00
+    startSession: returned YES, error nil, 5219 ms -> USABLE
+
+== VTFrameRateConversion
+  isSupported: 1
+  minimumDimensions: not exposed by this class
+  maximumDimensions: not exposed by this class
+  supportedRevisions: <NSIndexSet: 0xa7918a4d4b32441f>[number of indexes: 1 (in 1 ranges), indexes: (1)]  defaultRevision: 1
+  qualityPrioritization=1 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    startSession: returned YES, error nil, 882 ms -> USABLE
+  qualityPrioritization=2 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    startSession: returned YES, error nil, 792 ms -> USABLE
+
+== VTOpticalFlow
+  isSupported: 1
+  minimumDimensions: not exposed by this class
+  maximumDimensions: not exposed by this class
+  supportedRevisions: <NSIndexSet: 0xa7918a4d4b32441f>[number of indexes: 1 (in 1 ranges), indexes: (1)]  defaultRevision: 1
+  qualityPrioritization=1 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=240 height=135 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: 2C0h
+    startSession: returned YES, error nil, 277 ms -> USABLE
+  qualityPrioritization=2 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=240 height=135 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: 2C0h
+    startSession: returned YES, error nil, 304 ms -> USABLE
+
+== VTMotionBlur
+  isSupported: 1
+  minimumDimensions: not exposed by this class
+  maximumDimensions: not exposed by this class
+  supportedRevisions: <NSIndexSet: 0xa7918a4d4b32441f>[number of indexes: 1 (in 1 ranges), indexes: (1)]  defaultRevision: 1
+  qualityPrioritization=1 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    startSession: returned YES, error nil, 576 ms -> USABLE
+  qualityPrioritization=2 (1 normal, 2 quality):
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080: config created
+    frameSupportedPixelFormats: RGhA
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PixelFormatType,Height,IOSurfaceProperties,Width] formats: RGhA
+    startSession: returned YES, error nil, 314 ms -> USABLE
+
+== VTTemporalNoiseFilter
+  isSupported: 1
+  minimumDimensions: 160x64
+  maximumDimensions: 16384x8192
+  supportedSourcePixelFormats: &8v0 &8f0 &xv0 &xf0 -8v0 -8f0 -xv0 -xf0 /8v0 /8f0 /xv0 /xf0 |8v0 |8f0 |xv0 |xf0
+  config creation by size: 960x540=ok 1280x720=ok 1600x900=ok 1728x972=ok 1920x1080=ok 2560x1440=ok 3456x1944=ok 3840x2160=ok 4096x2160=ok 7680x4320=ok
+  1920x1080 (&8v0): config created
+    frameSupportedPixelFormats: &8v0
+    sourcePixelBufferAttributes: width=1920 height=1080 keys=[Height,PlaneAlignment,PixelFormatType,BytesPerRowAlignment,IOSurfaceProperties,CacheMode,IOSurfaceWiringAssertion,Width] formats: &8v0
+    destinationPixelBufferAttributes: width=1920 height=1080 keys=[PlaneAlignment,Height,BytesPerRowAlignment,PixelFormatType,IOSurfaceProperties,Width] formats: &8v0
+    previousFrameCount=1
+    nextFrameCount=2
+    startSession: returned YES, error nil, 1 ms -> USABLE
+
+== MetalFX MTLFXSpatialScaler on Apple M3 Pro
+  supportsDevice: 1  supportsMetal4FX: 1
+  color processing modes in header: perceptual(0) linear(1) hdr(2)
+  scaler creation 1920x1080 -> 3456x1944 by format (same in/out format) x mode [perceptual linear hdr]:
+    BGRA8Unorm       ok  ok  ok 
+    BGRA8Unorm_sRGB  ok  nil nil
+    RGBA8Unorm       ok  ok  ok 
+    RGBA8Unorm_sRGB  ok  nil nil
+    RGB10A2Unorm     ok  ok  ok 
+    BGR10A2Unorm     ok  ok  ok 
+    BGR10_XR         ok  ok  ok 
+    RG11B10Float     ok  ok  ok 
+    RGBA16Float      ok  ok  ok 
+    RGBA32Float      ok  ok  ok 
+    R8Unorm          ok  ok  ok 
+    RG8Unorm         ok  ok  ok 
+  scaler creation by size (BGRA8Unorm, perceptual): 1920x1080->1920x1080=ok 1920x1080->3456x1944=ok 1728x972->3456x1944=ok 1600x900->3456x1944=ok 1280x720->3456x1944=ok 960x540->3456x1944=ok 1920x1080->3840x2160=ok 1920x1080->7680x4320=ok 3456x1944->1920x1080=ok
+
+== TIMING (UNDER LOAD: six unrelated ffmpeg jobs were using the CPU). 300 timed frames after 10 warm-up, real frames from <recording>.mp4 at 1500 s, every 2nd decoded frame
+-- 3a. VTLowLatencySuperResolutionScaler (wanted: 1920x1080 -> 3456x1944 = 1.8x; timed at every size/factor the API accepts)
+LLSR 1920x1080: no supported scale factors, not timed
+LLSR 1728x972: no supported scale factors, not timed
+LLSR 1600x900: no supported scale factors, not timed
+LLSR 1280x720 x1.500 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 22 ms
+  first call 5.18 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 3.21  p25 3.36  p50 3.58  p75 4.26  p95 6.22  p99 7.08  max 7.57  mean 3.99 ms  (>1.5x p50: 12.7%)
+LLSR 960x540 x1.500 -> 1440x810 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 21 ms
+  first call 4.84 ms, fails 0, output buffer 1440x810
+  processWithParameters wall: n=300  p5 2.70  p25 3.05  p50 3.57  p75 4.24  p95 5.08  p99 6.04  max 6.40  mean 3.69 ms  (>1.5x p50: 4.0%)
+LLSR 960x540 x2.000 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 35 ms
+  first call 4.07 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 3.16  p25 4.19  p50 4.56  p75 5.09  p95 6.81  p99 7.01  max 7.83  mean 4.71 ms  (>1.5x p50: 4.0%)
+-- 3b. MetalFX spatial scaler -> 3456x1944
+MetalFX spatial 1920x1080 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 2 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.45  p25 3.46  p50 3.70  p75 6.05  p95 7.37  p99 9.02  max 9.36  mean 4.67 ms  (>1.5x p50: 29.3%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.18  p25 0.24  p50 0.29  p75 0.47  p95 0.67  p99 0.83  max 0.84  mean 0.35 ms  (>1.5x p50: 26.3%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.12  p25 4.43  p50 4.74  p75 6.70  p95 8.43  p99 9.87  max 11.35  mean 5.55 ms  (>1.5x p50: 22.0%)
+MetalFX spatial 1728x972 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 1.61  p25 3.45  p50 3.52  p75 5.42  p95 7.38  p99 8.53  max 9.33  mean 4.25 ms  (>1.5x p50: 26.7%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.19  p25 0.23  p50 0.28  p75 0.46  p95 0.65  p99 0.81  max 0.88  mean 0.34 ms  (>1.5x p50: 27.3%)
+  commit -> waitUntilCompleted wall: n=300  p5 2.30  p25 4.35  p50 4.59  p75 6.02  p95 8.31  p99 9.00  max 9.84  mean 5.09 ms  (>1.5x p50: 18.3%)
+MetalFX spatial 1600x900 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.45  p25 3.46  p50 3.66  p75 5.36  p95 7.13  p99 8.77  max 9.39  mean 4.43 ms  (>1.5x p50: 22.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.17  p25 0.21  p50 0.25  p75 0.46  p95 0.60  p99 0.88  max 0.99  mean 0.32 ms  (>1.5x p50: 28.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.03  p25 4.40  p50 4.59  p75 5.94  p95 8.04  p99 10.09  max 10.30  mean 5.26 ms  (>1.5x p50: 15.3%)
+MetalFX spatial 1280x720 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.45  p25 3.47  p50 3.69  p75 5.38  p95 7.43  p99 7.86  max 9.39  mean 4.49 ms  (>1.5x p50: 22.7%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.12  p25 0.16  p50 0.22  p75 0.37  p95 0.53  p99 0.60  max 0.80  mean 0.27 ms  (>1.5x p50: 28.3%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.02  p25 4.32  p50 4.56  p75 6.05  p95 7.91  p99 8.66  max 10.32  mean 5.25 ms  (>1.5x p50: 18.3%)
+# load after: 12:57  load averages: 4.83 9.54 11.65
+
+# ===== RUN 3 (timing section only; same command; no other probe process was running at start). Thu Nov 19 12:58:14 2026
+# load: 12:58  load averages: 3.88 8.31 11.02; ffmpeg processes running: 8
+== TIMING (UNDER LOAD: six unrelated ffmpeg jobs were using the CPU). 300 timed frames after 10 warm-up, real frames from <recording>.mp4 at 1500 s, every 2nd decoded frame
+-- 3a. VTLowLatencySuperResolutionScaler (wanted: 1920x1080 -> 3456x1944 = 1.8x; timed at every size/factor the API accepts)
+LLSR 1920x1080: no supported scale factors, not timed
+LLSR 1728x972: no supported scale factors, not timed
+LLSR 1600x900: no supported scale factors, not timed
+LLSR 1280x720 x1.500 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 17 ms
+  first call 6.13 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 3.78  p25 4.52  p50 5.09  p75 5.65  p95 7.05  p99 7.93  max 9.53  mean 5.20 ms  (>1.5x p50: 2.7%)
+LLSR 960x540 x1.500 -> 1440x810 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 23 ms
+  first call 4.38 ms, fails 0, output buffer 1440x810
+  processWithParameters wall: n=300  p5 2.77  p25 3.32  p50 3.85  p75 4.34  p95 5.71  p99 6.39  max 7.53  mean 3.92 ms  (>1.5x p50: 4.3%)
+LLSR 960x540 x2.000 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 21 ms
+  first call 3.94 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 2.63  p25 2.70  p50 2.78  p75 2.89  p95 3.05  p99 3.27  max 3.49  mean 2.80 ms  (>1.5x p50: 0.0%)
+-- 3b. MetalFX spatial scaler -> 3456x1944
+MetalFX spatial 1920x1080 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.41  p25 3.42  p50 3.43  p75 3.46  p95 5.35  p99 6.18  max 7.04  mean 3.61 ms  (>1.5x p50: 8.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.16  p25 0.19  p50 0.23  p75 0.28  p95 0.36  p99 0.44  max 0.62  mean 0.24 ms  (>1.5x p50: 5.7%)
+  commit -> waitUntilCompleted wall: n=300  p5 3.96  p25 4.14  p50 4.21  p75 4.32  p95 6.09  p99 7.05  max 7.63  mean 4.35 ms  (>1.5x p50: 2.7%)
+MetalFX spatial 1728x972 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 2.66  p25 3.42  p50 3.46  p75 6.85  p95 7.76  p99 8.24  max 8.78  mean 4.89 ms  (>1.5x p50: 44.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.13  p25 0.15  p50 0.20  p75 0.23  p95 0.28  p99 0.39  max 0.94  mean 0.20 ms  (>1.5x p50: 2.7%)
+  commit -> waitUntilCompleted wall: n=300  p5 3.16  p25 4.16  p50 4.29  p75 7.29  p95 8.19  p99 8.59  max 9.14  mean 5.49 ms  (>1.5x p50: 40.7%)
+MetalFX spatial 1600x900 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 1.63  p25 3.44  p50 3.49  p75 4.92  p95 6.88  p99 7.79  max 8.32  mean 4.03 ms  (>1.5x p50: 20.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.14  p25 0.19  p50 0.24  p75 0.30  p95 0.51  p99 0.73  max 0.78  mean 0.27 ms  (>1.5x p50: 16.7%)
+  commit -> waitUntilCompleted wall: n=300  p5 2.31  p25 4.24  p50 4.41  p75 5.48  p95 7.37  p99 8.38  max 8.74  mean 4.72 ms  (>1.5x p50: 8.7%)
+MetalFX spatial 1280x720 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.42  p25 3.43  p50 3.53  p75 5.53  p95 7.56  p99 8.05  max 8.79  mean 4.65 ms  (>1.5x p50: 29.7%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.10  p25 0.17  p50 0.23  p75 0.35  p95 0.43  p99 0.55  max 1.62  mean 0.26 ms  (>1.5x p50: 25.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.11  p25 4.25  p50 4.46  p75 6.07  p95 8.00  p99 8.57  max 9.15  mean 5.32 ms  (>1.5x p50: 19.0%)
+# other probes running at end: 33774 present_probe 
+
+# ===== RUN 4: CONTENTION. Same timing section, while 'interp_speed_res <video> 1500 60 1920 1080 33.37 1' (1080p interpolation, one call per 33.37 ms) ran in a second process. Thu Nov 19 12:59:10 2026
+# load: 12:59  load averages: 3.66 7.52 10.55; ffmpeg processes running: 8; other probes at start: 
+== TIMING (UNDER LOAD: six unrelated ffmpeg jobs were using the CPU). 300 timed frames after 10 warm-up, real frames from <recording>.mp4 at 1500 s, every 2nd decoded frame
+-- 3a. VTLowLatencySuperResolutionScaler (wanted: 1920x1080 -> 3456x1944 = 1.8x; timed at every size/factor the API accepts)
+LLSR 1920x1080: no supported scale factors, not timed
+LLSR 1728x972: no supported scale factors, not timed
+LLSR 1600x900: no supported scale factors, not timed
+LLSR 1280x720 x1.500 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 17 ms
+  first call 5.31 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 3.29  p25 3.55  p50 3.93  p75 5.32  p95 7.36  p99 7.62  max 7.73  mean 4.56 ms  (>1.5x p50: 21.3%)
+LLSR 960x540 x1.500 -> 1440x810 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 19 ms
+  first call 7.31 ms, fails 0, output buffer 1440x810
+  processWithParameters wall: n=300  p5 2.60  p25 2.88  p50 3.37  p75 4.60  p95 6.42  p99 7.08  max 7.18  mean 3.84 ms  (>1.5x p50: 17.7%)
+LLSR 960x540 x2.000 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 20 ms
+  first call 4.34 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 2.53  p25 2.79  p50 3.22  p75 4.34  p95 6.18  p99 6.64  max 7.53  mean 3.70 ms  (>1.5x p50: 21.3%)
+-- 3b. MetalFX spatial scaler -> 3456x1944
+MetalFX spatial 1920x1080 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 2 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 1.53  p25 3.44  p50 3.46  p75 3.54  p95 6.80  p99 8.01  max 8.48  mean 3.70 ms  (>1.5x p50: 13.3%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.14  p25 0.17  p50 0.21  p75 0.27  p95 0.51  p99 0.77  max 0.95  mean 0.24 ms  (>1.5x p50: 14.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 2.14  p25 4.16  p50 4.28  p75 4.57  p95 7.59  p99 8.82  max 9.11  mean 4.47 ms  (>1.5x p50: 9.7%)
+MetalFX spatial 1728x972 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 1.58  p25 3.45  p50 3.51  p75 4.81  p95 6.75  p99 7.28  max 7.79  mean 3.98 ms  (>1.5x p50: 17.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.13  p25 0.19  p50 0.25  p75 0.31  p95 0.55  p99 0.72  max 0.85  mean 0.27 ms  (>1.5x p50: 18.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 2.25  p25 4.27  p50 4.45  p75 5.27  p95 7.23  p99 8.05  max 8.75  mean 4.70 ms  (>1.5x p50: 8.3%)
+MetalFX spatial 1600x900 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 1.47  p25 2.19  p50 3.45  p75 4.16  p95 6.87  p99 7.87  max 7.93  mean 3.59 ms  (>1.5x p50: 17.0%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.11  p25 0.13  p50 0.16  p75 0.21  p95 0.39  p99 0.58  max 0.67  mean 0.19 ms  (>1.5x p50: 16.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 1.90  p25 2.72  p50 4.26  p75 4.80  p95 7.35  p99 8.27  max 8.37  mean 4.23 ms  (>1.5x p50: 12.0%)
+MetalFX spatial 1280x720 -> 3456x1944 BGRA8Unorm perceptual, scaler created in 1 ms, colorTextureUsage=0x1 outputTextureUsage=0x5
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.43  p25 3.46  p50 3.71  p75 5.97  p95 7.51  p99 8.61  max 8.95  mean 4.77 ms  (>1.5x p50: 32.7%)
+  kernel time (kernelEnd-kernelStart): n=300  p5 0.09  p25 0.13  p50 0.15  p75 0.20  p95 0.36  p99 0.51  max 0.57  mean 0.18 ms  (>1.5x p50: 15.3%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.11  p25 4.24  p50 4.58  p75 6.39  p95 8.06  p99 9.33  max 9.74  mean 5.40 ms  (>1.5x p50: 19.3%)
+# other probes running at end: 34228 interp_speed_re 34347 present_probe 
+
+# ===== RUN 1 (12:46, load averages 13-18, six ffmpeg jobs at >100% CPU each, no other probe seen). The file from this run was
+# overwritten by run 2; these lines are copied verbatim from the console capture of that run (kernel-time lines omitted).
+LLSR 1280x720 x1.500 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 2960 ms
+  first call 4.78 ms, fails 0, output buffer 1920x1080
+  processWithParameters wall: n=300  p5 3.21  p25 3.32  p50 3.43  p75 3.55  p95 4.20  p99 5.60  max 7.03  mean 3.52 ms  (>1.5x p50: 1.7%)
+LLSR 960x540 x1.500 -> 1440x810 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 2022 ms
+  processWithParameters wall: n=300  p5 2.52  p25 2.68  p50 2.79  p75 2.95  p95 3.42  p99 5.40  max 9.07  mean 2.90 ms  (>1.5x p50: 2.3%)
+LLSR 960x540 x2.000 -> 1920x1080 (dest attrs width/height given by API; src fmt 420v, dst fmt 420v), startSession 1412 ms
+  processWithParameters wall: n=300  p5 2.55  p25 2.75  p50 2.92  p75 3.18  p95 4.53  p99 7.34  max 11.84  mean 3.13 ms  (>1.5x p50: 5.3%)
+MetalFX spatial 1920x1080 -> 3456x1944 BGRA8Unorm perceptual
+  GPU time (GPUEndTime-GPUStartTime): n=300  p5 3.43  p25 3.43  p50 3.44  p75 3.46  p95 3.60  p99 4.50  max 4.58  mean 3.48 ms  (>1.5x p50: 0.0%)
+  commit -> waitUntilCompleted wall: n=300  p5 4.29  p25 4.58  p50 4.79  p75 5.71  p95 10.12  p99 13.52  max 15.49  mean 5.46 ms  (>1.5x p50: 10.3%)
+MetalFX spatial 1728x972 -> 3456x1944:  GPU time p50 3.44  p95 3.75  p99 4.46  max 4.67
+MetalFX spatial 1600x900 -> 3456x1944:  GPU time p50 3.45  p95 6.16  p99 6.52  max 6.73
+MetalFX spatial 1280x720 -> 3456x1944:  GPU time p50 3.44  p95 4.92  p99 5.83  max 6.10
+# Note on runs 2-4: another agent's present_probe (video presented at 120 Hz on the same GPU) overlapped parts of them; MetalFX GPU time is bimodal there.

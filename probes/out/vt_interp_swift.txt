@@ -1,0 +1,110 @@
+# vt_interp_swift raw output. UNDER LOAD (unrelated ffmpeg jobs). Thu Nov 19 13:10:00 2026
+# load: 13:10  load averages: 5.98 6.51 8.01
+# ./vt_interp_swift <video> 1500 30
+isSupported: true
+maximumDimension(forSpatialScaleFactor: 1) = Optional(1920)  maximumPixelCount = Optional(2073600)
+supportedPixelFormats: ["420v"]
+sourcePixelBufferAttributes: ["Width": 1920, "IOSurfaceProperties": {
+}, "Height": 1080, "PixelFormatType": 875704438, "ExtendedPixelsBottom": 0, "ExtendedPixelsRight": 0]
+destinationPixelBufferAttributes: ["Width": 1920, "IOSurfaceProperties": {
+}, "Height": 1080, "PixelFormatType": 875704438, "ExtendedPixelsBottom": 0, "ExtendedPixelsRight": 0]
+resolved source attributes: ["Height": 1080, "ExtendedPixelsRight": 0, "Width": 1920, "IOSurfaceProperties": {
+}, "ExtendedPixelsBottom": 0, "MetalCompatibility": 1, "PixelFormatType": <__NSArrayM 0x7ac4810030>(
+875704438
+)
+]
+
+== failure cases
+2560x1440 startSession: DID NOT THROW
+2560x1440 process after that start: error domain=VTFrameProcessorErrorDomain code=-19730 (VTFrameProcessorError(rawValue: -19730)) "Processor is not initialized" timedOut=false
+process before startSession: error nil timedOut=false
+1920x1080 startSession: ok in 99 ms
+second startSession on an active session: DID NOT THROW
+VTFrameProcessorFrame from a buffer without IOSurface: nil
+parameters with phase [0.0]: non-nil
+parameters with phase [0.25] on a 1-frame config: non-nil
+phase [0.25] processed on a 1-frame config: error nil timedOut=false 32.4 ms
+good call (pooled buffers, pts 0 < 1 < 2): error nil timedOut=false 14.8 ms
+previous pts AFTER source pts: error nil timedOut=false 14.0 ms
+all three pts equal: error nil timedOut=false 13.9 ms
+pts going backwards vs the previous call: error nil timedOut=false 14.0 ms
+invalid pts (CMTime.invalid): error nil timedOut=false 13.8 ms
+BGRA source and previous: error domain=VTFrameProcessorErrorDomain code=-19740 (VTFrameProcessorError(rawValue: -19740)) "The operation couldn’t be completed. (VTFrameProcessorErrorDomain error -19740.)" timedOut=false 0.1 ms
+420f (full range) source and previous: error domain=VTFrameProcessorErrorDomain code=-19740 (VTFrameProcessorError(rawValue: -19740)) "The operation couldn’t be completed. (VTFrameProcessorErrorDomain error -19740.)" timedOut=false 0.1 ms
+x420 (10-bit) source and previous: error domain=VTFrameProcessorErrorDomain code=-19740 (VTFrameProcessorError(rawValue: -19740)) "The operation couldn’t be completed. (VTFrameProcessorErrorDomain error -19740.)" timedOut=false 0.0 ms
+plain 420v IOSurface buffers, no extended pixels, all three: error nil timedOut=false 14.9 ms
+BGRA destination: error domain=VTFrameProcessorErrorDomain code=-19740 (VTFrameProcessorError(rawValue: -19740)) "The operation couldn’t be completed. (VTFrameProcessorErrorDomain error -19740.)" timedOut=false 0.1 ms
+good call again (is the session still alive after the errors?): error nil timedOut=false 13.8 ms
+
+== timing, 30.0 s of footage per mode, UNDER LOAD unless the machine is idle
+1920x1080 completion handler, paced 33.37 ms, pooled: n 899  p50 14.38  p95 14.88  p99 15.07  max 15.75 ms  fails 0
+    time inside the call itself (before it returns): n 899  p50 0.01  p95 0.02  p99 0.04  max 0.08 ms  
+    handler ran on main thread: 0 of 899; queue labels: ["vtframeprocessor-queue-0x100b62100"]
+    output closer to both inputs than they are to each other (moving frames only): 25 of 25
+1920x1080 async/await, paced 33.37 ms, pooled: n 899  p50 14.19  p95 14.84  p99 15.04  max 15.45 ms  fails 0
+    output closer to both inputs than they are to each other (moving frames only): 25 of 25
+1920x1080 Metal command buffer, paced 33.37 ms, pooled: n 899  p50 14.47  p95 15.03  p99 15.28  max 16.15 ms  fails 0
+    time inside the call itself (before it returns): n 899  p50 0.04  p95 0.07  p99 0.10  max 0.21 ms  
+    output closer to both inputs than they are to each other (moving frames only): 25 of 25
+1920x1080 completion handler, paced 33.37 ms, pooled: n 899  p50 14.41  p95 14.93  p99 15.40  max 55.04 ms  fails 0
+    time inside the call itself (before it returns): n 899  p50 0.01  p95 0.02  p99 0.03  max 0.07 ms  
+    handler ran on main thread: 0 of 899; queue labels: ["vtframeprocessor-queue-0x100b62100"]
+    output closer to both inputs than they are to each other (moving frames only): 25 of 25
+
+== lifecycle
+never-started processor: error nil; destination untouched: true
+started processor, same inputs: error nil; destination untouched: false
+two calls submitted back to back: first done after 14.6 ms, second after 29.0 ms
+new VTFrameProcessor after the old one ended: no throw, 63 ms
+  call 1 on the new processor: error nil, 15.8 ms
+  call 2 on the new processor: error nil, 14.3 ms
+  call 3 on the new processor: error nil, 13.9 ms
+endSession done (6th argument risky1 or risky2 runs the cases that crash)
+# exit 0
+# load: 13:12  load averages: 4.65 5.67 7.47
+
+# ./vt_interp_swift <video> 1500 1 1920 1080 risky1   (lifecycle section only)
+== lifecycle
+never-started processor: error nil; destination untouched: true
+started processor, same inputs: error nil; destination untouched: false
+two calls submitted back to back: first done after 14.6 ms, second after 29.2 ms
+new VTFrameProcessor after the old one ended: no throw, 68 ms
+  call 1 on the new processor: error nil, 15.8 ms
+  call 2 on the new processor: error nil, 13.7 ms
+  call 3 on the new processor: error nil, 13.6 ms
+in-flight call when endSession was called: handler ran, error nil
+endSession with one call in flight returned after 15.3 ms
+now calling process after endSession, no restart...
+# exit 139 (139 = SIGSEGV)
+
+# ./vt_interp_swift <video> 1500 1 1920 1080 risky2   (lifecycle section only)
+== lifecycle
+never-started processor: error nil; destination untouched: true
+started processor, same inputs: error nil; destination untouched: false
+two calls submitted back to back: first done after 13.7 ms, second after 27.7 ms
+new VTFrameProcessor after the old one ended: no throw, 64 ms
+  call 1 on the new processor: error nil, 16.1 ms
+  call 2 on the new processor: error nil, 13.7 ms
+  call 3 on the new processor: error nil, 13.6 ms
+startSession again on the SAME object after endSession: no throw
+now calling process on the restarted object...
+# exit 139 (139 = SIGSEGV)
+
+# ./vt_interp_swift <video> 1500 20 1280 720
+== timing, 20.0 s of footage per mode, UNDER LOAD unless the machine is idle
+1280x720 completion handler, paced 33.37 ms, pooled: n 599  p50 4.95  p95 5.25  p99 6.70  max 13.10 ms  fails 0
+    time inside the call itself (before it returns): n 599  p50 0.02  p95 0.03  p99 0.05  max 0.09 ms  
+    handler ran on main thread: 0 of 599; queue labels: ["vtframeprocessor-queue-0x10482a8a0"]
+    output closer to both inputs than they are to each other (moving frames only): 16 of 16
+1280x720 async/await, paced 33.37 ms, pooled: n 599  p50 4.92  p95 5.15  p99 5.31  max 5.59 ms  fails 0
+    output closer to both inputs than they are to each other (moving frames only): 16 of 16
+1280x720 Metal command buffer, paced 33.37 ms, pooled: n 599  p50 4.97  p95 5.22  p99 5.39  max 6.20 ms  fails 0
+    time inside the call itself (before it returns): n 599  p50 0.04  p95 0.07  p99 0.08  max 0.10 ms  
+    output closer to both inputs than they are to each other (moving frames only): 16 of 16
+1280x720 completion handler, paced 33.37 ms, pooled: n 599  p50 4.82  p95 5.02  p99 5.17  max 5.62 ms  fails 0
+    time inside the call itself (before it returns): n 599  p50 0.01  p95 0.02  p99 0.03  max 0.04 ms  
+    handler ran on main thread: 0 of 599; queue labels: ["vtframeprocessor-queue-0x10482a8a0"]
+    output closer to both inputs than they are to each other (moving frames only): 16 of 16
+
+== lifecycle
+# load: 13:13  load averages: 3.49 5.05 7.05

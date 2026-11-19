@@ -1,0 +1,22 @@
+# Compiled probes (rebuild from source; build command is in each file's first comment)
+probes/hitchfix
+probes/interp_speed
+probes/interp_speed_res
+probes/list_capture
+probes/luma_mad
+probes/present_probe
+probes/quality_trio
+probes/vt_interp_swift
+probes/vt_limits
+# Game footage: videos and still frames are not published
+*.mov
+*.mp4
+*.jpg
+*.png
+# Raw model run logs (contain unrelated private context)
+reviews/*.log
+.DS_Store
+# Study of the owner's private streaming setup: not published
+reviews/phase1-evidence/coexistence.md
+reviews/phase1-evidence/coexistenceRefutation.md
+.serena/

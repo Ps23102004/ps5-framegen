@@ -1,0 +1,18 @@
+video: 120 frames 1920x1080 iosurface=true matrix=ITU_R_709_2
+scaler usage: colorTextureUsage=1 outputTextureUsage=5 (1=shaderRead 2=shaderWrite 4=renderTarget)
+colour self-check: max |GPU - vImage| = 0 (8-bit steps)
+screen: frame=(0.0, 0.0, 2056.0, 1329.0) scale=2.0 maxFPS=120 minRefresh=8.333333 ms maxRefresh=41.666667 ms granularity=4.1666669999999995 ms safeTop=38.0 pt
+link defaults: preferredFrameLatency=2.0 range=CAFrameRateRange(minimum: 0.0, maximum: 0.0, __preferred: 0.0) drawableCount=2
+config: mode=link min-duration=0.0 link-hz=120.0 present-every=2 latency=2.0 drawables=2 at-time=false hud=false window=small drawable=4112x2658 scaler=true source=video
+callbacks=7437 parityFlips=0 wrongThread=0 textureFailures=0 presentedHandlers=3718 presentedTime==0: 2
+callback interval: n=7436 min=6.841 p50=8.332 p99=8.449 max=18.359 mean=8.337 ms
+lead (targetPresentationTimestamp - callback now): n=7437 min=30.806 p50=41.556 p99=41.629 max=41.640 mean=41.546 ms
+targetPresentationTimestamp - targetTimestamp: n=7437 min=16.667 p50=33.333 p99=33.333 max=33.333 mean=33.324 ms
+callback CPU time: n=3718 min=0.053 p50=0.396 p99=0.679 max=0.877 mean=0.345 ms
+GPU time (GPUEndTime - GPUStartTime): n=3718 min=1.777 p50=4.770 p99=6.101 max=6.818 mean=4.876 ms
+present statistics exclude the first 2.0 s (119 frames)
+presentedTime - targetPresentationTimestamp: n=3597 min=-8.329 p50=0.002 p99=0.019 max=0.021 mean=0.000 ms
+glass latency (presentedTime - time the frame was picked): n=3597 min=33.168 p50=41.561 p99=41.632 max=41.645 mean=41.556 ms
+presented interval: n=3596 min=8.333 p50=16.667 p99=16.667 max=25.000 mean=16.667 ms
+glitches (interval@time since first present): 8.33ms@10.49s 25.00ms@10.52s
+presented intervals within 16.67 ms +- 2 ms: 3594 / 3596 = 99.944 %, glitches=2

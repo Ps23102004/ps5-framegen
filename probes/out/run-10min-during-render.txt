@@ -1,0 +1,4 @@
+pixel formats: 420v
+interpolated 17982 frames at 1920x1080 in 271 s wall (fails 0)
+ms per frame: p50 12.80  p95 13.54  p99 14.32  max 130.82
+drift: first-minute mean 13.00 ms, last-minute mean 12.92 ms

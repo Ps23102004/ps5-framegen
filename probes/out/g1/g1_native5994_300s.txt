@@ -1,0 +1,42 @@
+# 2026-11-19 16:21:28 start | ffmpeg jobs: 10 | load { 3.38 3.77 4.52 }
+video: 120 frames 1920x1080 iosurface=true matrix=ITU_R_709_2
+scaler usage: colorTextureUsage=1 outputTextureUsage=5 (1=shaderRead 2=shaderWrite 4=renderTarget)
+bar 0 YCbCr=(235, 128, 128) gpuRGB=(255, 255, 255) vImageRGB=(255, 255, 255)
+bar 1 YCbCr=(219, 16, 138) gpuRGB=(254, 255, 0) vImageRGB=(254, 255, 0)
+bar 2 YCbCr=(188, 154, 16) gpuRGB=(0, 254, 255) vImageRGB=(0, 254, 255)
+bar 3 YCbCr=(173, 42, 26) gpuRGB=(0, 255, 1) vImageRGB=(0, 255, 1)
+bar 4 YCbCr=(78, 214, 230) gpuRGB=(255, 0, 254) vImageRGB=(255, 0, 254)
+bar 5 YCbCr=(63, 102, 240) gpuRGB=(255, 1, 0) vImageRGB=(255, 1, 0)
+bar 6 YCbCr=(32, 240, 118) gpuRGB=(1, 0, 255) vImageRGB=(1, 0, 255)
+bar 7 YCbCr=(16, 128, 128) gpuRGB=(0, 0, 0) vImageRGB=(0, 0, 0)
+colour self-check: max |GPU - vImage| = 0 (8-bit steps)
+display mode requested: 1728x1117 pt, 3456x2234 px, 59.940 Hz
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+display mode: native5994: 1728x1117 pt, 3456x2234 px, 59.940 Hz (was 2056x1329 pt, 4112x2658 px, 120.000 Hz)
+screen: frame=(0.0, 0.0, 1728.0, 1117.0) scale=2.0 maxFPS=60 minRefresh=16.683333 ms maxRefresh=16.683333 ms granularity=16.683333 ms safeTop=32.0 pt
+link defaults: preferredFrameLatency=2.0 range=CAFrameRateRange(minimum: 0.0, maximum: 0.0, __preferred: 0.0) drawableCount=2
+config: mode=link min-duration=0.0 link-hz=60.0 present-every=1 latency=2.0 drawables=2 at-time=false hud=true window=full drawable=3456x2234 scaler=true picture=video source=counter display-mode=native5994
+callbacks=17878 parityFlips=0 wrongThread=0 textureFailures=0 presentedHandlers=17877 presentedTime==0: 31
+callback interval: n=17877 min=12.251 p50=16.683 p99=16.779 max=1669.173 mean=16.781 ms
+lead (targetPresentationTimestamp - callback now): n=17878 min=32.668 p50=49.897 p99=50.002 max=50.024 mean=49.896 ms
+targetPresentationTimestamp - targetTimestamp: n=17878 min=16.667 p50=33.367 p99=33.367 max=33.367 mean=33.363 ms
+callback CPU time: n=17877 min=0.057 p50=0.603 p99=0.878 max=5.868 mean=0.537 ms
+GPU time (GPUEndTime - GPUStartTime): n=17877 min=1.041 p50=4.551 p99=14.040 max=38.922 mean=4.691 ms
+present statistics exclude the first 2.0 s (115 frames)
+presentedTime - targetPresentationTimestamp: n=17731 min=-0.131 p50=-0.052 p99=16.676 max=16.683 mean=1.856 ms
+glass latency (presentedTime - time the frame was picked): n=17731 min=45.507 p50=49.846 p99=66.602 max=66.667 mean=51.756 ms
+---- G1 report (--source counter) ----
+display mode applied: native5994: 1728x1117 pt, 3456x2234 px, 59.940 Hz (was 2056x1329 pt, 4112x2658 px, 120.000 Hz)
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+pmset -g batt (first line): Now drawing from 'AC Power'
+pmset -g | grep lowpowermode: lowpowermode         0
+load average at exit: 1.30 2.69 3.82
+latency (presented_time - callback_time, shown rows, non-zero presented): n=17846 p50=49.846 p99=66.601 max=66.667 ms
+content intervals (first 2.0 s excluded): count=17731 within 16.683 +- 2 ms: 17707 = 99.865 %, out of band: 24, max out-of-band in any rolling 15 s window: 13
+out-of-band intervals (interval@time since first present, first 24 of 24): 33.37ms@19.15s 33.37ms@20.00s 33.37ms@20.05s 33.37ms@20.17s 33.37ms@20.59s 33.37ms@20.87s 33.37ms@21.17s 33.37ms@21.74s 33.37ms@22.02s 33.37ms@22.31s 33.37ms@22.89s 33.37ms@23.17s 33.37ms@23.31s 33.37ms@68.57s 33.37ms@75.88s 33.37ms@80.70s 33.37ms@81.83s 33.37ms@135.82s 33.37ms@135.87s 33.37ms@169.28s 1718.37ms@173.04s 33.37ms@199.70s 33.37ms@199.75s 33.37ms@260.59s
+slots: shown=17877 held=1 skipped=0 (callbacks=17878, rows=17878); shown rows with presented_time == 0: 31 (of which handler had not run at exit: 0)
+pacer: corrections=2 collision=0 pushedLate=1 catchUpSkip=1; positions reserved=17985 never shown=105 (slot already past when due: 105) pending at exit=3 dropped at reservation=1
+housekeeping: nominalS=1 gapCallbacks=5 reservationQueueFull=0 positionLogFull=0 rowLogFull=0
+G1 RESULT: latency_p99_ms=66.60 in_band_pct=99.865 max_glitches_per_15s=13
+slots csv: 17878 rows written to probes/out/g1/g1_native5994_300s.csv
+# 16:26:32 end | ffmpeg jobs: 10 | load { 1.30 2.69 3.82 }

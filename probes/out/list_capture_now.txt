@@ -1,0 +1,79 @@
+camera permission: 0  microphone permission: 3  (0 not asked, 2 denied, 3 allowed)
+
+[video] "FaceTime HD Camera"
+  uniqueID=<device-id-1>  modelID=FaceTime HD Camera  manufacturer=Apple Inc.  transportType='bltn'  deviceType=AVCaptureDeviceTypeBuiltInWideAngleCamera
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: 1920x1080 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+  active frame duration: min 1000000/30000000 max 1000000/15000000
+  formats (7):
+    [0] 1920x1080 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [1] 1280x720 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [2] 1080x1920 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [3] 1760x1328 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [4] 640x480 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [5] 1328x1760 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+    [6] 1552x1552 420v  fps 15.000-30.000 (minDur 1000000/30000000)
+
+[video] "iPhone Camera"
+  uniqueID=<device-id-2>  modelID=iPhone18,1  manufacturer=  transportType='othr'  deviceType=AVCaptureDeviceTypeExternal
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: 640x480 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+  active frame duration: min 1000000/30000000 max 1000000/1000000
+  formats (8):
+    [0] 640x480 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+    [1] 640x480 420v  fps 1.000-60.000 (minDur 1000000/60000000)
+    [2] 1280x720 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+    [3] 1280x720 420v  fps 1.000-60.000 (minDur 1000000/60000000)
+    [4] 1920x1080 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+    [5] 1920x1080 420v  fps 1.000-60.000 (minDur 1000000/60000000)
+    [6] 1920x1440 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+    [7] 1920x1440 420v  fps 1.000-60.000 (minDur 1000000/60000000)
+
+[video] "iPhone Desk View Camera"
+  uniqueID=<device-id-3>  modelID=iPhone18,1  manufacturer=  transportType='othr'  deviceType=AVCaptureDeviceTypeDeskViewCamera
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: 1920x1440 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+  active frame duration: min 1000000/30000000 max 1000000/1000000
+  formats (1):
+    [0] 1920x1440 420v  fps 1.000-30.000 (minDur 1000000/30000000)
+
+[audio] "BlackHole 2ch"
+  uniqueID=BlackHole2ch_UID  modelID=BlackHole2ch_ModelUID  manufacturer=Existential Audio Inc.  transportType='virt'  deviceType=AVCaptureDeviceTypeMicrophone
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: lpcm 48000.0 Hz 2 ch 32 bit flags=0x9
+  formats (13):
+    [0] lpcm 768000.0 Hz 2 ch 32 bit flags=0x9
+    [1] lpcm 705600.0 Hz 2 ch 32 bit flags=0x9
+    [2] lpcm 384000.0 Hz 2 ch 32 bit flags=0x9
+    [3] lpcm 352800.0 Hz 2 ch 32 bit flags=0x9
+    [4] lpcm 192000.0 Hz 2 ch 32 bit flags=0x9
+    [5] lpcm 176400.0 Hz 2 ch 32 bit flags=0x9
+    [6] lpcm 96000.0 Hz 2 ch 32 bit flags=0x9
+    [7] lpcm 88200.0 Hz 2 ch 32 bit flags=0x9
+    [8] lpcm 48000.0 Hz 2 ch 32 bit flags=0x9
+    [9] lpcm 44100.0 Hz 2 ch 32 bit flags=0x9
+    [10] lpcm 24000.0 Hz 2 ch 32 bit flags=0x9
+    [11] lpcm 16000.0 Hz 2 ch 32 bit flags=0x9
+    [12] lpcm 8000.0 Hz 2 ch 32 bit flags=0x9
+
+[audio] "iPhone Microphone"
+  uniqueID=<device-id-4>  modelID=iPhone Mic  manufacturer=Apple Inc.  transportType='ccwd'  deviceType=AVCaptureDeviceTypeMicrophone
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: lpcm 48000.0 Hz 1 ch 32 bit flags=0x29
+  formats (1):
+    [0] lpcm 48000.0 Hz 1 ch 32 bit flags=0x29
+
+[audio] "MacBook Pro Microphone"
+  uniqueID=BuiltInMicrophoneDevice  modelID=Digital Mic  manufacturer=Apple Inc.  transportType='bltn'  deviceType=AVCaptureDeviceTypeMicrophone
+  isInUseByAnotherApplication=false  isSuspended=false  isConnected=true
+  activeFormat: lpcm 48000.0 Hz 1 ch 32 bit flags=0x9
+  formats (4):
+    [0] lpcm 96000.0 Hz 1 ch 32 bit flags=0x9
+    [1] lpcm 88200.0 Hz 1 ch 32 bit flags=0x9
+    [2] lpcm 48000.0 Hz 1 ch 32 bit flags=0x9
+    [3] lpcm 44100.0 Hz 1 ch 32 bit flags=0x9
+
+CoreMediaIO devices (hog/control pid -1 = nobody; 'n/a' = property not present):
+  "iPhone Camera" uid=<device-id-2>  runningSomewhere=0  hogPid=-1  controlPid=-1
+  "iPhone Desk View Camera" uid=<device-id-3>  runningSomewhere=0  hogPid=-1  controlPid=0
+  "FaceTime HD Camera" uid=<device-id-1>  runningSomewhere=0  hogPid=-1  controlPid=0

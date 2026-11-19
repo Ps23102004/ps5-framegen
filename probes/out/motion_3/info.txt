@@ -1,0 +1,10 @@
+motion_3: <recording>.mp4 @ 6530.300 s, distinct threshold 1.50
+startSession 66 ms
+  pts 6530.3000 first frame
+  pts 6530.3071 diff   0.08 duplicate
+  pts 6530.3238 diff  18.13 NEW  gap 1.4 frames, interpolate ok 18.4 ms
+  pts 6530.3405 diff  19.71 NEW  gap 1.0 frames, interpolate ok 16.6 ms
+  pts 6530.3572 diff   0.02 duplicate
+  pts 6530.3738 diff  20.64 NEW  gap 2.0 frames, interpolate ok 14.5 ms
+  pts 6530.3905 diff   0.04 duplicate
+  pts 6530.4072 diff  19.40 NEW  gap 2.0 frames, interpolate ok 14.7 ms  <- saved

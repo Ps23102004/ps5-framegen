@@ -1,0 +1,114 @@
+# 2026-11-19 16:46:17 start | Now drawing from 'AC Power' | lowpowermode 0 | ffmpeg jobs: 10 | load { 3.70 3.60 3.53 }
+=== 5994_vsync_plain_d0 :: --display-mode native5994 --link-hz 60 --mode vsync --present plain
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetTimestamp - tick entry): n=898 min=6.831 p50=14.834 p99=15.704 max=16.677 mean=14.840 ms
+GPU time (GPUEndTime - GPUStartTime): n=897 min=1.938 p50=4.628 p99=4.889 max=6.287 mean=4.500 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=48.183 p99=48.910 max=49.132 ms
+presented_time - slot time (target_time of the row, same rows): p50=33.345 p99=33.361 max=33.361 ms; rows more than half a slot (8.342 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=16.084 p99=16.817 max=24.175 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=897 held=1 skipped=0 (callbacks=898, rows=898); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=48.91 in_band_pct=100.000 max_glitches_per_15s=0 mode=vsync present=plain render_delay_ms=0 zero_presented=3 trailing_zero=0
+=== 5994_vsync_plain_d4 :: --display-mode native5994 --link-hz 60 --mode vsync --present plain --render-delay-ms 4
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetTimestamp - tick entry): n=896 min=1.470 p50=16.617 p99=16.662 max=16.676 mean=15.939 ms
+GPU time (GPUEndTime - GPUStartTime): n=894 min=1.488 p50=3.850 p99=4.531 max=6.994 mean=4.015 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=772 p50=28.309 p99=44.124 max=60.554 ms
+presented_time - slot time (target_time of the row, same rows): p50=16.663 p99=33.361 max=50.036 ms; rows more than half a slot (8.342 ms) late: 772 of 772
+nextDrawable() wait (first 2.0 s excluded): n=776 p50=0.093 p99=12.054 max=31.402 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=772 within 16.683 +- 2 ms: 770 = 99.741 %, out of band: 2, max out-of-band in any rolling 15 s window: 2
+out-of-band intervals (interval@time since first present, first 2 of 2): 33.37ms@5.81s 33.37ms@5.94s
+slots: shown=894 held=2 skipped=0 (callbacks=896, rows=896); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=44.12 in_band_pct=99.741 max_glitches_per_15s=2 mode=vsync present=plain render_delay_ms=4 zero_presented=3 trailing_zero=0
+=== 5994_vsync_plain_d8 :: --display-mode native5994 --link-hz 60 --mode vsync --present plain --render-delay-ms 8
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetTimestamp - tick entry): n=897 min=12.062 p50=16.624 p99=16.662 max=16.677 mean=16.513 ms
+GPU time (GPUEndTime - GPUStartTime): n=895 min=1.662 p50=3.829 p99=4.673 max=4.777 mean=3.879 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=24.184 p99=25.212 max=25.258 ms
+presented_time - slot time (target_time of the row, same rows): p50=16.663 p99=16.678 max=16.678 ms; rows more than half a slot (8.342 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=0.083 p99=0.147 max=0.165 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=895 held=2 skipped=0 (callbacks=897, rows=897); shown rows with presented_time == 0: 2 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=25.21 in_band_pct=100.000 max_glitches_per_15s=0 mode=vsync present=plain render_delay_ms=8 zero_presented=2 trailing_zero=0
+=== 5994_vsync_plain_d12 :: --display-mode native5994 --link-hz 60 --mode vsync --present plain --render-delay-ms 12
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetTimestamp - tick entry): n=898 min=0.390 p50=14.953 p99=15.679 max=16.678 mean=14.947 ms
+GPU time (GPUEndTime - GPUStartTime): n=897 min=1.947 p50=4.459 p99=4.810 max=6.527 mean=4.457 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=34.573 p99=36.485 max=36.816 ms
+presented_time - slot time (target_time of the row, same rows): p50=33.346 p99=33.361 max=33.362 ms; rows more than half a slot (8.342 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=2.431 p99=4.318 max=11.003 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=897 held=1 skipped=0 (callbacks=898, rows=898); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=36.48 in_band_pct=100.000 max_glitches_per_15s=0 mode=vsync present=plain render_delay_ms=12 zero_presented=3 trailing_zero=0
+=== 5994_vsync_atslot_d0 :: --display-mode native5994 --link-hz 60 --mode vsync --present at-slot
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetTimestamp - tick entry): n=899 min=16.563 p50=16.616 p99=16.653 max=16.658 mean=16.619 ms
+GPU time (GPUEndTime - GPUStartTime): n=898 min=1.936 p50=4.494 p99=4.798 max=5.297 mean=4.454 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=33.278 p99=33.327 max=33.336 ms
+presented_time - slot time (target_time of the row, same rows): p50=16.663 p99=16.678 max=16.678 ms; rows more than half a slot (8.342 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=1.206 p99=1.517 max=13.025 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=898 held=1 skipped=0 (callbacks=899, rows=899); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=33.33 in_band_pct=100.000 max_glitches_per_15s=0 mode=vsync present=at-slot render_delay_ms=0 zero_presented=3 trailing_zero=0
+=== 5994_link_cs_none :: --display-mode native5994 --link-hz 60 --mode link --colorspace none
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetPresentationTimestamp - callback now): n=898 min=32.787 p50=49.896 p99=49.987 max=50.002 mean=49.839 ms
+GPU time (GPUEndTime - GPUStartTime): n=897 min=1.682 p50=4.210 p99=4.587 max=5.843 mean=4.245 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=49.870 p99=49.969 max=49.983 ms
+presented_time - slot time (target_time of the row, same rows): p50=-0.020 p99=-0.005 max=-0.005 ms; rows more than half a slot (8.342 ms) late: 0 of 775
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=897 held=1 skipped=0 (callbacks=898, rows=898); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=49.97 in_band_pct=100.000 max_glitches_per_15s=0 mode=link present=n/a render_delay_ms=0 zero_presented=3 trailing_zero=0
+=== 5994_link_cs_p3 :: --display-mode native5994 --link-hz 60 --mode link --colorspace p3
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 59.940 Hz
+lead (targetPresentationTimestamp - callback now): n=899 min=28.192 p50=49.896 p99=49.991 max=50.017 mean=49.817 ms
+GPU time (GPUEndTime - GPUStartTime): n=898 min=1.689 p50=4.172 p99=4.259 max=5.100 mean=4.119 ms
+link rate: requested 60.0 Hz, measured 59.940 Hz (1 / S median); step = 1 slot(s) per position; S median = 16.6833 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=49.876 p99=49.971 max=49.979 ms
+presented_time - slot time (target_time of the row, same rows): p50=-0.020 p99=-0.005 max=-0.005 ms; rows more than half a slot (8.342 ms) late: 0 of 775
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 775 = 100.000 %, out of band: 0, max out-of-band in any rolling 15 s window: 0
+slots: shown=898 held=1 skipped=0 (callbacks=899, rows=899); shown rows with presented_time == 0: 4 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=49.97 in_band_pct=100.000 max_glitches_per_15s=0 mode=link present=n/a render_delay_ms=0 zero_presented=4 trailing_zero=0
+=== 120_vsync_plain_d0 :: --display-mode native120 --link-hz 120 --mode vsync --present plain
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 120.000 Hz
+lead (targetTimestamp - tick entry): n=1800 min=7.691 p50=8.279 p99=8.309 max=8.319 mean=8.278 ms
+GPU time (GPUEndTime - GPUStartTime): n=899 min=1.680 p50=3.992 p99=4.662 max=5.795 mean=3.952 ms
+link rate: requested 120.0 Hz, measured 120.000 Hz (1 / S median); step = 2 slot(s) per position; S median = 8.3333 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=24.927 p99=24.958 max=24.979 ms
+presented_time - slot time (target_time of the row, same rows): p50=16.650 p99=16.666 max=16.667 ms; rows more than half a slot (4.167 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=0.084 p99=0.124 max=0.153 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 774 = 99.871 %, out of band: 1, max out-of-band in any rolling 15 s window: 1
+out-of-band intervals (interval@time since first present, first 1 of 1): 25.00ms@8.27s
+slots: shown=899 held=901 skipped=0 (callbacks=1800, rows=1800); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=24.96 in_band_pct=99.871 max_glitches_per_15s=1 mode=vsync present=plain render_delay_ms=0 zero_presented=3 trailing_zero=0
+=== 120_vsync_plain_d3 :: --display-mode native120 --link-hz 120 --mode vsync --present plain --render-delay-ms 3
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 120.000 Hz
+lead (targetTimestamp - tick entry): n=1800 min=1.608 p50=8.280 p99=8.316 max=8.321 mean=8.274 ms
+GPU time (GPUEndTime - GPUStartTime): n=899 min=1.476 p50=2.161 p99=3.848 max=4.175 mean=2.584 ms
+link rate: requested 120.0 Hz, measured 120.000 Hz (1 / S median); step = 2 slot(s) per position; S median = 8.3333 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=775 p50=21.182 p99=30.047 max=30.194 ms
+presented_time - slot time (target_time of the row, same rows): p50=16.656 p99=24.998 max=25.000 ms; rows more than half a slot (4.167 ms) late: 775 of 775
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=0.078 p99=0.132 max=0.158 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=775 within 16.683 +- 2 ms: 445 = 57.419 %, out of band: 330, max out-of-band in any rolling 15 s window: 330
+out-of-band intervals (interval@time since first present, first 40 of 330): 25.00ms@2.09s 8.34ms@2.10s 25.00ms@2.12s 8.34ms@2.13s 25.00ms@2.24s 8.34ms@2.25s 25.00ms@2.34s 8.34ms@2.35s 25.00ms@2.39s 8.34ms@2.40s 25.00ms@2.42s 8.34ms@2.43s 25.00ms@2.52s 8.33ms@2
+slots: shown=899 held=901 skipped=0 (callbacks=1800, rows=1800); shown rows with presented_time == 0: 3 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=30.05 in_band_pct=57.419 max_glitches_per_15s=330 mode=vsync present=plain render_delay_ms=3 zero_presented=3 trailing_zero=0
+=== 120_vsync_plain_d6 :: --display-mode native120 --link-hz 120 --mode vsync --present plain --render-delay-ms 6
+display mode applied (read back): 1728x1117 pt, 3456x2234 px, 120.000 Hz
+lead (targetTimestamp - tick entry): n=1800 min=2.999 p50=8.287 p99=8.318 max=8.321 mean=8.273 ms
+GPU time (GPUEndTime - GPUStartTime): n=899 min=1.669 p50=3.828 p99=4.216 max=4.787 mean=3.805 ms
+link rate: requested 120.0 Hz, measured 120.000 Hz (1 / S median); step = 2 slot(s) per position; S median = 8.3333 ms (last 120 target differences)
+latency (presented_time - callback_time, shown rows, non-zero presented, first 2.0 s excluded): n=776 p50=25.767 p99=27.201 max=27.264 ms
+presented_time - slot time (target_time of the row, same rows): p50=24.984 p99=25.000 max=25.000 ms; rows more than half a slot (4.167 ms) late: 776 of 776
+nextDrawable() wait (first 2.0 s excluded): n=779 p50=0.078 p99=0.114 max=0.135 ms; nil drawables (whole run): 0
+content intervals (first 2.0 s excluded): count=776 within 16.683 +- 2 ms: 775 = 99.871 %, out of band: 1, max out-of-band in any rolling 15 s window: 1
+out-of-band intervals (interval@time since first present, first 1 of 1): 25.00ms@8.29s
+slots: shown=899 held=901 skipped=0 (callbacks=1800, rows=1800); shown rows with presented_time == 0: 2 (of which handler had not run at exit: 0)
+G1 RESULT: latency_p99_ms=27.20 in_band_pct=99.871 max_glitches_per_15s=1 mode=vsync present=plain render_delay_ms=6 zero_presented=2 trailing_zero=0
+# 16:49:27 end | ffmpeg jobs: 10 | load { 3.83 3.70 3.57 }
